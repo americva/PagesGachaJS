@@ -135,6 +135,22 @@ tbody {
   background-color: black;
 }
 
+#btn-delete {
+  margin-top: 100px;
+  height: 30px;
+  width: 120px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 0 solid;
+  background-color: #ff0000;
+  color: #fff;
+  font-size: auto;
+}
+
+#btn-delete:hover {
+  background-color: rgb(247, 75, 75);
+}
+
 #table {
   display: flex;
   flex-direction: row;
