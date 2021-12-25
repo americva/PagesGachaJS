@@ -1,0 +1,170 @@
+@import url("http://fonts.cdnfonts.com/css/typo-grotesk-rounded");
+* {
+  font-family: "Typo Grotesk Rounded", sans-serif;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 80px;
+  height: auto;
+}
+
+.cantidad {
+  font-size: 30px;
+}
+
+.wrap-table {
+  width: 90%;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(127deg, #ecf7cf, #bbf7e0);
+  animation: gradient 20s ease infinite alternate;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.items-info {
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#table {
+  width: 100%;
+  text-align: left;
+  font-size: 22px;
+}
+
+#table::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+}
+
+.rareza0 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: #555555;
+}
+
+.rareza1 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: #adec48;
+}
+
+.rareza2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: #2ccaf1;
+}
+
+.rareza3 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: #f548de;
+}
+
+.rareza4 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: #f12a2a;
+}
+
+.rareza5 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: #ff8f0f;
+}
+
+#btn-volver {
+  margin-top: 30px;
+  height: 50px;
+  width: 130px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 0 solid;
+  background-color: #353535;
+  color: #fff;
+  font-size: 30px;
+}
+
+#btn-volver:hover {
+  background-color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .wrap-table {
+    background: none;
+  }
+
+  .table-tr {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(127deg, #ecf7cf, #bbf7e0);
+  }
+
+  .table-image {
+    width: 70px;
+    height: auto;
+  }
+
+  .items-info {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .cantidad {
+    font-size: 30px;
+  }
+
+  #table thead {
+    display: none;
+  }
+
+  #table tr {
+    margin-bottom: 15px;
+  }
+
+  #table td {
+    position: relative;
+  }
+
+  #table td::before {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
+/*# sourceMappingURL=colOut.css.map */
