@@ -3,10 +3,17 @@
   font-family: "Typo Grotesk Rounded", sans-serif;
 }
 
+.titulo-resultado {
+  width: 250px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
 .content-wrapper {
   position: absolute;
-  top: 40%;
-  left: 50%;
+  top: 30%;
+  left: 55%;
   transform: translate(-50%, 0);
 }
 
@@ -155,12 +162,12 @@
 }
 @media screen and (max-width: 800px) {
   .human img {
-    width: 40px;
+    width: 70px;
     margin-left: 20px;
   }
 
   .dog img {
-    width: 40px;
+    width: 80px;
     margin-left: 20px;
   }
 
@@ -174,7 +181,7 @@
   }
 
   #foto {
-    width: 5px;
+    width: 10px;
     height: auto;
   }
 
@@ -184,12 +191,12 @@
 }
 @media screen and (max-width: 400px) {
   .human img {
-    width: 40px;
+    width: 60px;
     margin-left: 20px;
   }
 
   .dog img {
-    width: 40px;
+    width: 60px;
     margin-left: 20px;
   }
 
@@ -203,7 +210,7 @@
   }
 
   #foto {
-    width: 5px;
+    width: 10px;
     height: auto;
   }
 
