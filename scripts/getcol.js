@@ -16,6 +16,6 @@ function getCollection() {
     }
 
     for (let i=0; i<itemCollec.length; i++) {
-        target.innerHTML += "<tr class='table-tr'><td><div class='rareza" + itemCollec[i].rareza + "'></div></td><td><img class='table-image' src='" + itemCollec[i].image + "'></img></td><td><div>" + itemCollec[i].nombre + "</td><td>" + itemCollec[i].descripcion + "</td><td class='cantidad'>" + itemCollec[i].cantidad + "</td></tr>";
+        target.innerHTML += "<tbody><tr class='rarity-quantity'><td><div class='rareza" + itemCollec[i].rareza + "'></div></td><td class='cantidad'>" + itemCollec[i].cantidad + "</td></tr><tr class='img-name'><td><img class='table-image' src='" + itemCollec[i].image + "'></img></td><td class='item-nom'>" + itemCollec[i].nombre + "</td><tr><td class='item-desc'>" + itemCollec[i].descripcion + "</td></tr></tr></tbody>";
     }
 }

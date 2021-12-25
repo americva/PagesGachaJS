@@ -188,6 +188,7 @@
 }
 
 #contador {
+  margin-top: 10px;
   width: 90px;
   font-size: 20px;
   text-align: center;
@@ -207,9 +208,10 @@
 
 #instrucciones {
   display: flex;
-  margin-top: 20px;
   align-items: center;
   justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 @media screen and (max-width: 1270px) {
@@ -352,6 +354,7 @@
 
   .dog img {
     width: 80px;
+    margin-top: 110px;
   }
 
   .bg-item {
@@ -374,7 +377,7 @@
 }
 @media screen and (max-width: 361px) {
   .bg-item {
-    top: 22%;
+    top: 18%;
     width: 59px;
   }
 }

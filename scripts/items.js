@@ -57,6 +57,7 @@ function agregarCollec(item) {
 
     let flag = false;
     if (itemCollec.length === 0) {
+        item.cantidad++;
         itemCollec.push(item);
     } else {
         for (let i in itemCollec) {
@@ -67,6 +68,7 @@ function agregarCollec(item) {
         }
 
         if (flag == false) {
+            item.cantidad++;
             itemCollec.push(item);
         }
     }

@@ -3,6 +3,11 @@
   font-family: "Typo Grotesk Rounded", sans-serif;
 }
 
+.wrap-table {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .content-wrapper {
   display: flex;
   flex-direction: column;
@@ -12,19 +17,6 @@
 img {
   width: 80px;
   height: auto;
-}
-
-.cantidad {
-  font-size: 30px;
-}
-
-.wrap-table {
-  width: 90%;
-  height: auto;
-  padding: 20px;
-  border-radius: 10px;
-  background: linear-gradient(127deg, #ecf7cf, #bbf7e0);
-  animation: gradient 20s ease infinite alternate;
 }
 
 @keyframes gradient {
@@ -38,23 +30,51 @@ img {
     background-position: 0% 50%;
   }
 }
-.items-info {
+
+tbody {
+  display: block;
+  padding: 15px;
+  border-radius: 10px;
+  background: linear-gradient(127deg, #ecf7cf, #bbf7e0);
+  margin-top: 10px;
+}
+
+.rarity-quantity {
   display: flex;
-  flex-direction: row;
-  flex-direction: column;
+  justify-content: space-between;
+}
+
+.img-name{
+  display: flex;
+  align-items: center;
   justify-content: space-evenly;
 }
 
-#table {
-  width: 100%;
-  text-align: left;
-  font-size: 22px;
+.table-image {
+  width: 70px;
+  height: auto;
 }
 
-#table::after {
-  box-sizing: border-box;
-  border-width: 0;
-  border-style: solid;
+#table thead {
+  display: none;
+}
+
+#table tr {
+  margin-bottom: 10px;
+}
+
+#table td {
+  position: relative;
+}
+
+#table td::before {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  padding-left: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
 }
 
 .rareza0 {
@@ -115,17 +135,48 @@ img {
   background-color: black;
 }
 
+#table {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+tbody {
+  margin: 5px;
+}
+
 @media screen and (max-width: 600px) {
+  
+  #table {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  tbody {
+    margin: 5px;
+  }
+  
   .wrap-table {
     background: none;
   }
 
-  .table-tr {
-    display: flex;
-    justify-content: space-between;
+  tbody {
+    display: block;
     padding: 15px;
     border-radius: 10px;
     background: linear-gradient(127deg, #ecf7cf, #bbf7e0);
+    margin-top: 10px;
+  }
+
+  .rarity-quantity {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .img-name{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 
   .table-image {
@@ -133,23 +184,12 @@ img {
     height: auto;
   }
 
-  .items-info {
-    display: flex;
-    flex-direction: row;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-
-  .cantidad {
-    font-size: 30px;
-  }
-
   #table thead {
     display: none;
   }
 
   #table tr {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   #table td {
